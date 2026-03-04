@@ -22,8 +22,13 @@ public enum CTError {
     PLUGIN_NOT_ENABLED("0202"),
     OLLAMA_GENERIC("0300"),
     TRANSIENT_GENERIC("0400"),
+    TRANSIENT_READ_FILE("0401"),
     DB_GENERIC("0500"),
-    DB_OPEN("0501"),;
+    DB_OPEN("0501"),
+    DB_CONFIG("0502"),
+    DB_INSERT("0503"),
+    DB_DELETE("0504"),
+    DB_SELECT("0505"),;
 
     private String code;
 
