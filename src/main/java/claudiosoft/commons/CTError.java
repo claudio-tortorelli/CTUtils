@@ -28,7 +28,9 @@ public enum CTError {
     DB_CONFIG("0502"),
     DB_INSERT("0503"),
     DB_DELETE("0504"),
-    DB_SELECT("0505"),;
+    DB_SELECT("0505"),
+    DB_UPDATE("0506"),
+    DB_STATUS("0507");
 
     private String code;
 
