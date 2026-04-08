@@ -30,7 +30,8 @@ public enum CTError {
     DB_DELETE("0504"),
     DB_SELECT("0505"),
     DB_UPDATE("0506"),
-    DB_STATUS("0507");
+    DB_STATUS("0507"),
+    DB_ACCESS("0509");
 
     private String code;
 

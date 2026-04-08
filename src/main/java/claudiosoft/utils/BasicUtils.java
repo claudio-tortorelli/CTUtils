@@ -38,6 +38,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.TimeZone;
 import java.util.UUID;
@@ -304,6 +305,15 @@ public class BasicUtils {
         while ((length = source.read(buf)) > 0) {
             target.write(buf, 0, length);
         }
+    }
+
+    public static void sleepRandom(int mSec) throws InterruptedException {
+        Random rnd = new Random();
+        sleep(rnd.nextInt(mSec));
+    }
+
+    public static void sleep(long msec) throws InterruptedException {
+        Thread.sleep(msec);
     }
 
     /**
